@@ -29,21 +29,8 @@ void __VERIFIER_assume(int x) {
   assert(x);
 }
 
-void __VERIFIER_assert(bool x, int property) {
-  sealog("[sea] __VERIFIER_assert was called for property: %d,\n", property);
-  assert(x);
-}
-
 void __SEA_assume(bool x) {
   assert(x);
-}
-
-void btor2mlir_print_input_num(unsigned num, unsigned value, unsigned width) { 
-  sealog("input, %d, %d, %d\n", num, value, width);
-}
-
-void btor2mlir_print_state_num(unsigned num, unsigned value, unsigned width) { 
-  sealog("state, %d, %d, %d\n", num, value, width);
 }
 
 bool __seahorn_get_value_i1(int ctr, bool *g_arr, int g_arr_sz) {
